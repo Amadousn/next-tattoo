@@ -73,6 +73,12 @@ export default function Header() {
                                 CRÉATIONS
                             </button>
                             <button
+                                onClick={() => scrollToSection('flash-tattoo')}
+                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
+                            >
+                                FLASH
+                            </button>
+                            <button
                                 onClick={() => scrollToSection('tarifs')}
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
                             >
@@ -139,6 +145,12 @@ export default function Header() {
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 CRÉATIONS
+                            </button>
+                            <button
+                                onClick={() => scrollToSection('flash-tattoo')}
+                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
+                            >
+                                FLASH TATTOO
                             </button>
                             <button
                                 onClick={() => scrollToSection('tarifs')}
