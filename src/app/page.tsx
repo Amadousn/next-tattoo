@@ -6,15 +6,21 @@ import CoveringSection from '@/components/CoveringSection';
 import PiercingsSection from '@/components/PiercingsSection';
 import InfoSection from '@/components/InfoSection';
 import Footer from '@/components/Footer';
+import ChallengeSection from '@/components/ChallengeSection';
+import ChallengeCTA from '@/components/ChallengeCTA';
 
 export default function Home() {
   return (
     <>
       <Header />
+      <ChallengeCTA />
       <main className="min-h-screen bg-[#0a0a0a]">
         <Hero />
         <div id="creations">
           <LatestCreations />
+        </div>
+        <div id="challenge-section">
+          <ChallengeSection />
         </div>
         <div id="tarifs">
           <PricingSection />
