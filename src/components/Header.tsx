@@ -42,10 +42,10 @@ export default function Header() {
         >
             <div className="w-full flex justify-center">
                 <div className="w-full max-w-7xl px-4 md:px-8">
-                    <div className="flex items-center justify-between h-20 md:h-24">
+                    <div className="flex items-center justify-between h-24 md:h-32">
                         {/* Logo */}
-                        <Link href="/" className="flex items-center gap-3 group">
-                            <div className="relative w-12 h-12 md:w-14 md:h-14">
+                        <Link href="/" className="flex items-center gap-4 group">
+                            <div className="relative w-16 h-16 md:w-20 md:h-20">
                                 <Image
                                     src="/logo-new.png"
                                     alt="Next Tattoo Logo"
@@ -55,10 +55,10 @@ export default function Header() {
                                 />
                             </div>
                             <div className="hidden sm:block">
-                                <div className="font-['Playfair_Display'] text-xl md:text-2xl font-bold text-white">
+                                <div className="font-['Playfair_Display'] text-2xl md:text-3xl font-bold text-white">
                                     Next <span className="text-[#C9A961]">Tattoo</span>
                                 </div>
-                                <div className="font-['Cinzel'] text-[10px] text-[#C9A961] tracking-widest">
+                                <div className="font-['Cinzel'] text-xs text-[#C9A961] tracking-[0.2em]">
                                     LOGISTIC
                                 </div>
                             </div>

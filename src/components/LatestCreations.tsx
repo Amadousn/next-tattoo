@@ -104,7 +104,7 @@ export default function LatestCreations() {
                 {/* CTA Instagram */}
                 <div className="flex justify-center mt-16">
                     <a 
-                        href="https://instagram.com" 
+                        href="https://www.instagram.com/next.tattoo__logistic" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="group relative px-10 py-5 overflow-hidden border border-[#C9A961]/30 bg-[#0a0a0a] hover:border-[#C9A961] transition-colors duration-300"

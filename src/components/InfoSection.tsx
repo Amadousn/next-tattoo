@@ -31,7 +31,9 @@ export default function InfoSection() {
                                 </div>
                                 <div>
                                     <h4 className="text-white font-bold mb-1">Paris 11ème</h4>
-                                    <p className="text-gray-500 text-sm">148 Rue du Chemin Vert, 75011 Paris</p>
+                                    <p className="text-gray-500 text-sm">90 Avenue de la République</p>
+                                    <p className="text-gray-500 text-sm">75011 Paris</p>
+                                    <p className="text-[#C9A961] text-xs font-bold mt-2">Sur RDV - Jeudi, Vendredi, Samedi</p>
                                 </div>
                             </div>
 
@@ -41,7 +43,9 @@ export default function InfoSection() {
                                 </div>
                                 <div>
                                     <h4 className="text-white font-bold mb-1">Les Ulis</h4>
-                                    <p className="text-gray-500 text-sm">Centre Commercial Ulis 2</p>
+                                    <p className="text-gray-500 text-sm">Centre Commercial Les Boutiques</p>
+                                    <p className="text-gray-500 text-sm">Avenue de Bourgogne, 91940 Les Ulis</p>
+                                    <p className="text-[#C9A961] text-xs font-bold mt-2">Sur RDV - Lundi, Mardi, Mercredi</p>
                                 </div>
                             </div>
 
@@ -50,16 +54,16 @@ export default function InfoSection() {
                                     <Clock size={20} />
                                 </div>
                                 <div>
-                                    <h4 className="text-white font-bold mb-1">Horaires d'ouverture</h4>
-                                    <p className="text-gray-500 text-sm">Lundi - Dimanche : 10h00 - 20h00</p>
-                                    <p className="text-[#C9A961] text-xs font-bold mt-1">OUVERT 7J/7</p>
+                                    <h4 className="text-white font-bold mb-1">Horaires</h4>
+                                    <p className="text-gray-500 text-sm">Sur rendez-vous uniquement</p>
+                                    <p className="text-[#C9A961] text-xs font-bold mt-1">6 JOURS / 7</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="pt-8 border-t border-white/10">
-                            <a href="tel:0143556060" className="text-2xl font-black text-white hover:text-[#C9A961] transition-colors font-['Cinzel']">
-                                01 43 55 60 60
+                            <a href="tel:+33624358280" className="text-2xl font-black text-white hover:text-[#C9A961] transition-colors font-['Cinzel']">
+                                +33 6 24 35 82 80
                             </a>
                         </div>
                     </motion.div>
