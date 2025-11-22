@@ -124,37 +124,51 @@ export default function Hero() {
 
                 {/* Boutons CTA */}
                 <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 items-center">
-                    <a
-                        href="https://www.planity.com/next-tatoo-logistique-75011-paris"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group relative px-8 py-4 bg-[#C9A961] text-black font-['Cinzel'] font-bold tracking-wider overflow-hidden transition-transform hover:scale-105"
-                    >
-                        <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
-                        <span className="relative flex items-center gap-2">
-                            PRENDRE RENDEZ-VOUS
-                            <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </span>
-                    </a>
+                    <div className="flex flex-col items-center gap-8 w-full">
+                        {/* Boutons principaux */}
+                        <div className="flex flex-col sm:flex-row gap-6 items-center w-full md:w-auto">
+                            <a
+                                href="https://www.planity.com/next-tatoo-logistique-75011-paris"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full sm:w-auto group relative px-8 py-4 bg-[#C9A961] text-black font-['Cinzel'] font-bold tracking-wider overflow-hidden transition-transform hover:scale-105 text-center"
+                            >
+                                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+                                <span className="relative flex items-center justify-center gap-2">
+                                    PRENDRE RENDEZ-VOUS
+                                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </span>
+                            </a>
+                            
+                            <button
+                                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                                className="w-full sm:w-auto px-8 py-4 border border-[#5A0000] text-[#F5F5DC] font-['Cinzel'] font-bold tracking-wider hover:bg-[#5A0000]/20 transition-colors duration-300"
+                            >
+                                NOUS CONTACTER
+                            </button>
+                        </div>
 
-                    <div className="flex flex-col md:flex-row gap-4 items-center w-full md:w-auto">
-                        <button
+                        {/* Badge Avis Client */}
+                        <button 
                             onClick={() => document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="w-full md:w-auto px-8 py-4 border border-[#C9A961]/50 text-[#C9A961] font-['Cinzel'] font-bold tracking-wider hover:bg-[#C9A961]/10 transition-colors duration-300 flex items-center justify-center gap-2"
+                            className="group flex flex-col items-center gap-2 hover:scale-105 transition-transform cursor-pointer"
                         >
-                            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                            </svg>
-                            VOIR NOS AVIS
-                        </button>
-                        
-                        <button
-                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="w-full md:w-auto px-8 py-4 border border-[#5A0000] text-[#F5F5DC] font-['Cinzel'] font-bold tracking-wider hover:bg-[#5A0000]/20 transition-colors duration-300"
-                        >
-                            NOUS CONTACTER
+                            <div className="flex items-center gap-1">
+                                {[1,2,3,4,5].map(i => (
+                                    <svg key={i} className="w-5 h-5 text-[#C9A961] fill-current drop-shadow-[0_0_5px_rgba(201,169,97,0.5)]" viewBox="0 0 24 24">
+                                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                    </svg>
+                                ))}
+                            </div>
+                            <div className="flex items-center gap-2 text-sm font-medium">
+                                <span className="text-white font-bold text-lg">4.8/5</span>
+                                <span className="w-1 h-1 rounded-full bg-gray-500"></span>
+                                <span className="text-gray-300 group-hover:text-[#C9A961] transition-colors underline underline-offset-4 decoration-[#C9A961]/30 group-hover:decoration-[#C9A961]">
+                                    +300 avis clients
+                                </span>
+                            </div>
                         </button>
                     </div>
                 </motion.div>
