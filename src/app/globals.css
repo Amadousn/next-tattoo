@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:wght@400;700;900&display=swap');
-@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Palette inspirée du logo Next Tattoo */
 :root {
@@ -22,10 +25,6 @@
     --black: #000000;
     --black-soft: #0a0a0a;
     --black-lighter: #1a1a1a;
-}
-
-@theme inline {
-    --font-sans: var(--font-geist-sans);
 }
 
 * {

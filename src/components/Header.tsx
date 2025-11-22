@@ -47,7 +47,7 @@ export default function Header() {
                         <Link href="/" className="flex items-center gap-3 group">
                             <div className="relative w-12 h-12 md:w-14 md:h-14">
                                 <Image
-                                    src="/logo.png"
+                                    src="/logo-new.png"
                                     alt="Next Tattoo Logo"
                                     fill
                                     className="object-contain group-hover:scale-110 transition-transform duration-300"
