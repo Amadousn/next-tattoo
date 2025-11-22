@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import LatestCreations from '@/components/LatestCreations';
 import FlashTattooSection from '@/components/FlashTattooSection';
+import ReviewsSection from '@/components/ReviewsSection';
 import PricingSection from '@/components/PricingSection';
 import CoveringSection from '@/components/CoveringSection';
 import PiercingsSection from '@/components/PiercingsSection';
@@ -22,6 +23,9 @@ export default function Home() {
         </div>
         <div id="flash-tattoo">
           <FlashTattooSection />
+        </div>
+        <div id="reviews">
+          <ReviewsSection />
         </div>
         <div id="challenge-section">
           <ChallengeSection />

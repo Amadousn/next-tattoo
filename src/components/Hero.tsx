@@ -139,12 +139,24 @@ export default function Hero() {
                         </span>
                     </a>
 
-                    <button
-                        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                        className="group px-8 py-4 border border-[#5A0000] text-[#F5F5DC] font-['Cinzel'] font-bold tracking-wider hover:bg-[#5A0000]/20 transition-colors duration-300"
-                    >
-                        NOUS CONTACTER
-                    </button>
+                    <div className="flex flex-col md:flex-row gap-4 items-center w-full md:w-auto">
+                        <button
+                            onClick={() => document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="w-full md:w-auto px-8 py-4 border border-[#C9A961]/50 text-[#C9A961] font-['Cinzel'] font-bold tracking-wider hover:bg-[#C9A961]/10 transition-colors duration-300 flex items-center justify-center gap-2"
+                        >
+                            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                            VOIR NOS AVIS
+                        </button>
+                        
+                        <button
+                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="w-full md:w-auto px-8 py-4 border border-[#5A0000] text-[#F5F5DC] font-['Cinzel'] font-bold tracking-wider hover:bg-[#5A0000]/20 transition-colors duration-300"
+                        >
+                            NOUS CONTACTER
+                        </button>
+                    </div>
                 </motion.div>
 
                 {/* Scroll Indicator */}
