@@ -5,15 +5,66 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 const creations = [
-    { id: 1, src: '/last-creation/creation-1.jpg', alt: 'Tatouage réaliste' },
-    { id: 3, src: '/last-creation/creation-3.jpg', alt: 'Tatouage artistique' },
-    { id: 5, src: '/last-creation/creation-5.jpg', alt: 'Composition florale' },
-    { id: 7, src: '/last-creation/creation-7.jpg', alt: 'Tatouage portrait' },
-    { id: 9, src: '/last-creation/creation-9.jpg', alt: 'Design ornemental' },
-    { id: 11, src: '/last-creation/creation-11.jpg', alt: 'Pièce détaillée' },
-    { id: 13, src: '/last-creation/creation-13.jpg', alt: 'Art corporel' },
-    { id: 15, src: '/last-creation/creation-15.jpg', alt: 'Finesse du trait' },
-    { id: 17, src: '/last-creation/creation-17.jpg', alt: 'Création unique' },
+    {
+        id: 1,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.24.11_5f943eaa.jpg',
+        title: 'Création 1',
+        category: 'Tattoo'
+    },
+    {
+        id: 2,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.24.31_52d2d2a3.jpg',
+        title: 'Création 2',
+        category: 'Tattoo'
+    },
+    {
+        id: 3,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.42.10_8636f1fe.jpg',
+        title: 'Création 3',
+        category: 'Tattoo'
+    },
+    {
+        id: 4,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.42.10_e213fa30.jpg',
+        title: 'Création 4',
+        category: 'Tattoo'
+    },
+    {
+        id: 5,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.42.11_824a4c4c.jpg',
+        title: 'Création 5',
+        category: 'Tattoo'
+    },
+    {
+        id: 6,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.42.11_9844ab73.jpg',
+        title: 'Création 6',
+        category: 'Tattoo'
+    },
+    {
+        id: 7,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.42.12_3596b68b.jpg',
+        title: 'Création 7',
+        category: 'Tattoo'
+    },
+    {
+        id: 8,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.42.17_102889d2.jpg',
+        title: 'Création 8',
+        category: 'Tattoo'
+    },
+    {
+        id: 9,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.42.18_667a23ef.jpg',
+        title: 'Création 9',
+        category: 'Tattoo'
+    },
+    {
+        id: 10,
+        image: '/creations/WhatsApp Image 2025-11-22 à 21.42.19_7e970cc3.jpg',
+        title: 'Création 10',
+        category: 'Tattoo'
+    }
 ];
 
 export default function LatestCreations() {
@@ -73,28 +124,21 @@ export default function LatestCreations() {
                                 <div className="relative w-full h-full overflow-hidden rounded-sm bg-neutral-900 transform transition-transform duration-500 group-hover:scale-[1.02]">
                                     {/* Image */}
                                     <Image
-                                        src={item.src}
-                                        alt={item.alt}
+                                        src={item.image}
+                                        alt="Tatouage Next Tattoo"
                                         fill
                                         className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0 grayscale-[30%]"
                                         sizes="(max-width: 768px) 350px, 450px"
                                     />
                                     
                                     {/* Overlay Premium */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-0 transition-opacity duration-500"></div>
                                     
                                     {/* Cadre Doré Animé */}
                                     <div className="absolute inset-0 border border-[#C9A961]/0 group-hover:border-[#C9A961]/50 transition-all duration-500 z-20"></div>
                                     
                                     {/* Effet de Scan */}
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#C9A961]/10 to-transparent translate-y-[-100%] group-hover:translate-y-[100%] transition-transform duration-1000 ease-in-out z-30"></div>
-
-                                    {/* Informations au survol */}
-                                    <div className="absolute bottom-0 left-0 w-full p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-40">
-                                        <div className="border-t border-[#C9A961]/50 pt-4">
-                                            <p className="text-[#C9A961] font-['Cinzel'] tracking-widest text-sm uppercase">{item.alt}</p>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         ))}
