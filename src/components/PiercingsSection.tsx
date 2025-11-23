@@ -2,28 +2,64 @@
 
 const piercingCategories = [
     {
-        title: 'Oreille',
-        items: ['Lobe', 'Helix', 'Tragus / Anti Tragus', 'Forward Helix', 'Conch', 'Rook', 'Daith', 'Industrial', 'Snug', 'Flat']
+        title: 'Oreille (20€)',
+        items: [
+            { name: 'Lobe', price: '20€' },
+            { name: 'Helix', price: '20€' },
+            { name: 'Tragus', price: '20€' },
+            { name: 'Anti Tragus', price: '20€' },
+            { name: 'Forward Helix', price: '20€' },
+            { name: 'Conch', price: '20€' },
+            { name: 'Rook', price: '20€' },
+            { name: 'Daith', price: '20€' },
+            { name: 'Industrial', price: '20€' },
+            { name: 'Snug', price: '20€' },
+            { name: 'Flat', price: '20€' }
+        ]
     },
     {
-        title: 'Visage',
-        items: ['Arcade', 'Bridge', 'Bridge Vertical', 'Cat Eye', 'Surface', 'Surface Tragus', 'Surface Supérieur', 'Surface Horizontal', 'Angel Bites']
+        title: 'Nez (30€)',
+        items: [
+            { name: 'Narine', price: '30€' },
+            { name: 'Septum', price: '30€' },
+            { name: 'Nostril', price: '30€' }
+        ]
     },
     {
-        title: 'Nez',
-        items: ['Nez', 'Nez x2', 'Septum']
+        title: 'Visage (40€)',
+        items: [
+            { name: 'Arcade', price: '40€' },
+            { name: 'Bridge', price: '40€' },
+            { name: 'Œil de chat', price: '40€' },
+            { name: 'Surface', price: '40€' }
+        ]
+    },
+    {
+        title: 'Bouche (40€)',
+        items: [
+            { name: 'Langue', price: '40€' },
+            { name: 'Smiley', price: '40€' },
+            { name: 'Labret', price: '40€' },
+            { name: 'Medusa', price: '40€' },
+            { name: 'Snake Eyes', price: '40€' },
+            { name: 'Venom', price: '40€' }
+        ]
     },
     {
         title: 'Corps',
-        items: ['Nombril', 'Microdermal', 'Surface', 'Téton', 'Téton x2']
+        items: [
+            { name: 'Nombril', price: '40€' },
+            { name: 'Microdermal', price: '40€' },
+            { name: 'Surface', price: '40€' },
+            { name: 'Téton (Sein)', price: '90€' }
+        ]
     },
     {
-        title: 'Langue / Bouche',
-        items: ['Langue', 'Surface Langue', 'Snake Eyes', 'Smiley', 'Anti-Smiley', 'Cheek', 'Angel Bites', 'Dahlia Bites', 'Labret Central', 'Labret Décalé', 'Labret Vertical', 'Medusa', 'Madonna', 'Venom', 'Mesuper Bites']
-    },
-    {
-        title: 'Génitaux',
-        items: ['Christina']
+        title: 'Génitaux (120€)',
+        items: [
+            { name: 'Christina', price: '120€' },
+            { name: 'Vertical Hood', price: '120€' }
+        ]
     }
 ];
 
@@ -88,11 +124,14 @@ export default function PiercingsSection() {
                                 </h3>
                                 <ul className="space-y-3">
                                     {category.items.map((item, itemIndex) => (
-                                        <li key={itemIndex} className="flex items-center gap-3 text-[#E0E0E0] group/item">
-                                            <div className="w-1.5 h-1.5 bg-[#C9A961] rotate-45 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300"></div>
-                                            <span className="font-['Cinzel'] text-sm md:text-base group-hover/item:text-[#C9A961] group-hover/item:translate-x-1 transition-all duration-300">
-                                                {item}
-                                            </span>
+                                        <li key={itemIndex} className="flex items-center justify-between gap-3 text-[#E0E0E0] group/item">
+                                            <div className="flex items-center gap-3">
+                                                <div className="w-1.5 h-1.5 bg-[#C9A961] rotate-45 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300"></div>
+                                                <span className="font-['Cinzel'] text-sm md:text-base group-hover/item:text-[#C9A961] group-hover/item:translate-x-1 transition-all duration-300">
+                                                    {item.name}
+                                                </span>
+                                            </div>
+                                            <span className="font-bold text-[#C9A961] text-sm">{item.price}</span>
                                         </li>
                                     ))}
                                 </ul>
