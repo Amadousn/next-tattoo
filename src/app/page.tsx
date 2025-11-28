@@ -4,6 +4,7 @@ import LatestCreations from '@/components/LatestCreations';
 import FlashTattooSection from '@/components/FlashTattooSection';
 import ReviewsSection from '@/components/ReviewsSection';
 import PricingSection from '@/components/PricingSection';
+import TattooTrainingSection from '@/components/TattooTrainingSection';
 import CoveringSection from '@/components/CoveringSection';
 import PiercingsSection from '@/components/PiercingsSection';
 import InfoSection from '@/components/InfoSection';
@@ -32,6 +33,9 @@ export default function Home() {
         </div>
         <div id="tarifs">
           <PricingSection />
+        </div>
+        <div id="stage">
+          <TattooTrainingSection />
         </div>
         <div id="covering">
           <CoveringSection />
