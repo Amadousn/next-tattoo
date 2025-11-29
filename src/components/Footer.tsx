@@ -83,8 +83,8 @@ export default function Footer() {
                         <div className="space-y-2 text-sm text-gray-400">
                             <p>90 Avenue de la République</p>
                             <p>75011 Paris</p>
-                            <p className="text-[#C9A961] font-bold mt-4">Sur RDV</p>
-                            <p>Jeudi - Vendredi - Samedi</p>
+                            <p className="text-[#C9A961] font-bold mt-4">Ouvert 7J/7</p>
+                            <p>24H/24</p>
                         </div>
                     </div>
                     
@@ -95,8 +95,8 @@ export default function Footer() {
                             <p>Centre Commercial Les Boutiques</p>
                             <p>Avenue de Bourgogne</p>
                             <p>91940 Les Ulis</p>
-                            <p className="text-[#C9A961] font-bold mt-4">Sur RDV</p>
-                            <p>Lundi - Mardi - Mercredi</p>
+                            <p className="text-[#C9A961] font-bold mt-4">Ouvert 7J/7</p>
+                            <p>24H/24</p>
                         </div>
                     </div>
 

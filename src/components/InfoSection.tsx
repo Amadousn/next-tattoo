@@ -50,8 +50,8 @@ export default function InfoSection() {
                             <div className="flex items-start gap-4">
                                 <Clock className="text-[#C9A961] mt-1 flex-shrink-0" size={20} />
                                 <div>
-                                    <p className="text-gray-300 font-medium">Jeudi - Vendredi - Samedi</p>
-                                    <p className="text-gray-500">10h00 - 19h00</p>
+                                    <p className="text-gray-300 font-medium">Ouvert 7J/7</p>
+                                    <p className="text-gray-500">24H/24</p>
                                 </div>
                             </div>
                         </div>
@@ -94,8 +94,8 @@ export default function InfoSection() {
                             <div className="flex items-start gap-4">
                                 <Clock className="text-[#C9A961] mt-1 flex-shrink-0" size={20} />
                                 <div>
-                                    <p className="text-gray-300 font-medium">Lundi - Mardi - Mercredi</p>
-                                    <p className="text-gray-500">10h00 - 19h00</p>
+                                    <p className="text-gray-300 font-medium">Ouvert 7J/7</p>
+                                    <p className="text-gray-500">24H/24</p>
                                 </div>
                             </div>
                         </div>
