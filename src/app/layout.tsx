@@ -50,10 +50,10 @@ export const metadata: Metadata = {
     siteName: "Next Tattoo",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo-new.png",
         width: 1200,
         height: 630,
-        alt: "Next Tattoo Studio",
+        alt: "Next Tattoo Studio Logo",
       },
     ],
   },
@@ -61,12 +61,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Next Tattoo | Studio de Tatouage Paris",
     description: "Studio de tatouage d'élite. Réalisme, couleurs, cover-up. Formation disponible.",
-    images: ["/og-image.jpg"],
-    // ... (reste identique)
+    images: ["/logo-new.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: "/logo-new.png",
+    apple: "/logo-new.png",
   },
   alternates: {
     canonical: "https://nexttattoo.fr",
