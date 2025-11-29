@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ChevronDown } from 'lucide-react';
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -70,14 +71,39 @@ export default function Header() {
                                 onClick={() => scrollToSection('creations')}
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
                             >
-                                CRÉATIONS
+                                GALERIE
                             </button>
-                            <button
-                                onClick={() => scrollToSection('flash-tattoo')}
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
-                            >
-                                FLASH
-                            </button>
+                            
+                            {/* Dropdown Prestations */}
+                            <div className="relative group">
+                                <button className="flex items-center gap-1 font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider py-4">
+                                    PRESTATIONS
+                                    <ChevronDown size={14} />
+                                </button>
+                                <div className="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-black/95 backdrop-blur-md border border-[#333] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                    <div className="py-2 flex flex-col">
+                                        <button
+                                            onClick={() => scrollToSection('flash-tattoo')}
+                                            className="font-['Cinzel'] text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
+                                        >
+                                            FLASH TATTOO
+                                        </button>
+                                        <button
+                                            onClick={() => scrollToSection('covering')}
+                                            className="font-['Cinzel'] text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
+                                        >
+                                            COVERING
+                                        </button>
+                                        <button
+                                            onClick={() => scrollToSection('piercings')}
+                                            className="font-['Cinzel'] text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
+                                        >
+                                            PIERCINGS
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
                             <button
                                 onClick={() => scrollToSection('tarifs')}
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
@@ -85,16 +111,10 @@ export default function Header() {
                                 TARIFS
                             </button>
                             <button
-                                onClick={() => scrollToSection('covering')}
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
+                                onClick={() => scrollToSection('stage')}
+                                className="font-['Cinzel'] text-sm text-[#C9A961] hover:text-white transition-colors duration-300 tracking-wider border border-[#C9A961]/30 px-3 py-1 rounded-sm hover:bg-[#C9A961]/10"
                             >
-                                COVERING
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('piercings')}
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
-                            >
-                                PIERCINGS
+                                FORMATION
                             </button>
                             <button
                                 onClick={() => scrollToSection('contact')}
@@ -157,6 +177,12 @@ export default function Header() {
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 TARIFS
+                            </button>
+                            <button
+                                onClick={() => scrollToSection('stage')}
+                                className="font-['Cinzel'] text-sm text-[#C9A961] font-bold hover:text-white transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
+                            >
+                                FORMATION
                             </button>
                             <button
                                 onClick={() => scrollToSection('covering')}

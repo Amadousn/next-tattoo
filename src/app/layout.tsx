@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://next-tattoo.com'),
+  metadataBase: new URL('https://nexttattoo.fr'),
   title: {
     default: "Next Tattoo | Studio de Tatouage Paris & Les Ulis",
     template: "%s | Next Tattoo"
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://next-tattoo.com",
+    url: "https://nexttattoo.fr",
     title: "Next Tattoo | L'Art du Tatouage à Paris",
     description: "Découvrez l'excellence du tatouage chez Next Tattoo. Nos artistes réalisent vos projets uniques : réalisme, tribal, calligraphie. Réservez votre séance.",
     siteName: "Next Tattoo",
@@ -62,13 +62,14 @@ export const metadata: Metadata = {
     title: "Next Tattoo | Studio de Tatouage Paris",
     description: "Studio de tatouage d'élite. Réalisme, couleurs, cover-up. Formation disponible.",
     images: ["/og-image.jpg"],
+    // ... (reste identique)
   },
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-icon.png",
   },
   alternates: {
-    canonical: "https://next-tattoo.com",
+    canonical: "https://nexttattoo.fr",
   },
 };
 
@@ -81,7 +82,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "TattooParlor",
     "name": "Next Tattoo",
-    "image": "https://next-tattoo.com/og-image.jpg",
+    "image": "https://nexttattoo.fr/og-image.jpg",
     "description": "Studio de tatouage professionnel offrant des créations uniques et personnalisées.",
     "address": {
       "@type": "PostalAddress",
@@ -98,23 +99,22 @@ export default function RootLayout({
         "closes": "19:00"
       }
     ],
-    "telephone": "+33123456789",
-    "url": "https://next-tattoo.com"
+    "telephone": "+33624358280",
+    "url": "https://nexttattoo.fr"
   };
 
   return (
     <html lang="fr" suppressHydrationWarning>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
+      <head />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
