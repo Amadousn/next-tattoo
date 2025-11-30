@@ -71,6 +71,9 @@ export const metadata: Metadata = {
     canonical: "https://nexttattoo.fr",
   },
   manifest: "/manifest.json",
+  verification: {
+    google: "J99wtVzukiqmbuk8V_teMS5Qp34oUihcNfMCaczAxMI",
+  },
 };
 
 export default function RootLayout({
