@@ -154,9 +154,9 @@ export default function TattooTrainingSection() {
                                     <video 
                                         src={`/trust/video${num}.mp4`}
                                         className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
-                                        controls
+                                        autoPlay
+                                        loop
                                         muted
-                                        preload="metadata"
                                         playsInline
                                     >
                                         Votre navigateur ne supporte pas la lecture de vidéos.
