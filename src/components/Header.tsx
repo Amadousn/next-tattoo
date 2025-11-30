@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Skull } from 'lucide-react';
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -101,6 +101,13 @@ export default function Header() {
                             >
                                 CONTACT
                             </Link>
+                            <Link
+                                href="/challenge"
+                                className="relative font-cinzel text-sm font-bold text-red-600 hover:text-red-500 transition-colors duration-300 tracking-wider flex items-center overflow-visible group"
+                            >
+                                CHALLENGE
+                                <Skull className="absolute -top-4 -right-6 w-6 h-6 text-red-600 rotate-12 group-hover:rotate-0 transition-transform duration-300 drop-shadow-[0_0_5px_rgba(220,38,38,0.5)]" />
+                            </Link>
                         </nav>
 
                         {/* CTA Button Desktop */}
@@ -180,6 +187,14 @@ export default function Header() {
                                 className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 CONTACT
+                            </Link>
+                            <Link
+                                href="/challenge"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="relative font-cinzel text-sm font-bold text-red-600 hover:text-red-500 transition-colors duration-300 tracking-wider text-left py-3 border-b border-red-900/20 flex items-center justify-between"
+                            >
+                                CHALLENGE
+                                <Skull className="w-5 h-5 text-red-600" />
                             </Link>
                             <a
                                 href="https://www.planity.com/next-tatoo-logistique-75011-paris"
