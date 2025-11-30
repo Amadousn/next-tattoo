@@ -75,10 +75,6 @@ export const metadata: Metadata = {
     description: "Studio de tatouage d'élite. Réalisme, couleurs, cover-up. Formation disponible.",
     images: ["/logo-new.png"],
   },
-  icons: {
-    icon: "/logo-new.png",
-    apple: "/logo-new.png",
-  },
   alternates: {
     canonical: "https://nexttattoo.fr",
   },
