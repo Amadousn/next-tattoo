@@ -13,13 +13,13 @@ export default function InfoSection() {
                 <motion.div 
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, margin: "-50px" }}
                     className="text-center mb-20"
                 >
-                    <h2 className="font-['Playfair_Display'] text-4xl md:text-6xl font-black text-white mb-6">
+                    <h2 className="font-playfair text-4xl md:text-6xl font-black text-white mb-6">
                         NOS <span className="text-[#C9A961]">STUDIOS</span>
                     </h2>
-                    <p className="text-gray-400 font-['Cinzel'] max-w-2xl mx-auto">
+                    <p className="text-gray-400 font-cinzel max-w-2xl mx-auto">
                         Deux adresses, une même exigence d'excellence. Retrouvez-nous à Paris et aux Ulis.
                     </p>
                 </motion.div>
@@ -29,14 +29,14 @@ export default function InfoSection() {
                     <motion.div 
                         initial={{ x: -50, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, margin: "-50px" }}
                         className="group relative bg-[#111] border border-[#333] p-10 rounded-2xl hover:border-[#C9A961] transition-colors duration-300 overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                             <MapPin size={120} />
                         </div>
                         
-                        <h3 className="text-3xl font-['Playfair_Display'] font-bold text-white mb-2">PARIS</h3>
+                        <h3 className="text-3xl font-playfair font-bold text-white mb-2">PARIS</h3>
                         <div className="w-12 h-1 bg-[#C9A961] mb-8"></div>
                         
                         <div className="space-y-6 relative z-10">
@@ -73,14 +73,14 @@ export default function InfoSection() {
                     <motion.div 
                         initial={{ x: 50, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, margin: "-50px" }}
                         className="group relative bg-[#111] border border-[#333] p-10 rounded-2xl hover:border-[#C9A961] transition-colors duration-300 overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                             <MapPin size={120} />
                         </div>
                         
-                        <h3 className="text-3xl font-['Playfair_Display'] font-bold text-white mb-2">LES ULIS</h3>
+                        <h3 className="text-3xl font-playfair font-bold text-white mb-2">LES ULIS</h3>
                         <div className="w-12 h-1 bg-[#C9A961] mb-8"></div>
                         
                         <div className="space-y-6 relative z-10">
@@ -118,7 +118,7 @@ export default function InfoSection() {
                 <motion.div 
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, margin: "-50px" }}
                     className="text-center"
                 >
                     <div className="inline-flex flex-col md:flex-row items-center gap-8 bg-[#111] border border-[#333] p-8 rounded-2xl">

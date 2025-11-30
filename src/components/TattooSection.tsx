@@ -51,7 +51,7 @@ export default function TattooSection() {
                         <motion.div 
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, margin: "-50px" }}
                             transition={{ delay: 0 }}
                             className="bg-[#111] border border-[#333] p-8 rounded-2xl hover:border-[#C9A961] transition-all duration-500 group hover:-translate-y-2"
                         >
@@ -68,8 +68,8 @@ export default function TattooSection() {
                         <motion.div 
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.2 }}
+                            viewport={{ once: true, margin: "-100px" }}
+                            transition={{ delay: 0.1 }}
                             className="bg-[#111] border border-[#333] p-8 rounded-2xl hover:border-[#C9A961] transition-all duration-500 group hover:-translate-y-2 relative"
                         >
                             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#C9A961] to-transparent"></div>
@@ -86,8 +86,8 @@ export default function TattooSection() {
                         <motion.div 
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.4 }}
+                            viewport={{ once: true, margin: "-100px" }}
+                            transition={{ delay: 0.2 }}
                             className="bg-[#111] border border-[#333] p-8 rounded-2xl hover:border-[#C9A961] transition-all duration-500 group hover:-translate-y-2"
                         >
                             <div className="w-14 h-14 bg-[#C9A961]/10 rounded-full flex items-center justify-center text-[#C9A961] mb-6 group-hover:bg-[#C9A961] group-hover:text-black transition-colors">
