@@ -11,7 +11,7 @@ export default function Footer() {
                     <div className="w-24 h-24 relative mb-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
                         <Image 
                             src="/logo-new.png" 
-                            alt="Logo Footer" 
+                            alt="Next Tattoo Studio Logo - Paris & Les Ulis" 
                             fill 
                             className="object-contain"
                         />
