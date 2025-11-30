@@ -12,8 +12,8 @@ export default function InfoSection() {
             <div className="container mx-auto px-4 relative z-10">
                 <motion.div 
                     initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true, margin: "-50px" }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6 }}
                     className="text-center mb-20"
                 >
                     <h2 className="font-playfair text-4xl md:text-6xl font-black text-white mb-6">
@@ -28,8 +28,8 @@ export default function InfoSection() {
                     {/* Studio Paris */}
                     <motion.div 
                         initial={{ x: -50, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: true, margin: "-50px" }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
                         className="group relative bg-[#111] border border-[#333] p-10 rounded-2xl hover:border-[#C9A961] transition-colors duration-300 overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -72,8 +72,8 @@ export default function InfoSection() {
                     {/* Studio Les Ulis */}
                     <motion.div 
                         initial={{ x: 50, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: true, margin: "-50px" }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
                         className="group relative bg-[#111] border border-[#333] p-10 rounded-2xl hover:border-[#C9A961] transition-colors duration-300 overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">

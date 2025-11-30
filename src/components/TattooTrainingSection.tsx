@@ -9,14 +9,14 @@ export default function TattooTrainingSection() {
             {/* Background FX */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#1a1a1a] via-black to-black opacity-50"></div>
             
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="container mx-auto px-4 relative z-10 font-cinzel">
                 {/* Titre */}
                 <div className="text-center mb-20">
                     <motion.h2 
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="font-['Playfair_Display'] text-4xl md:text-6xl font-black text-white mb-6"
+                        className="font-playfair text-4xl md:text-6xl font-black text-white mb-6"
                     >
                         STAGE DE <span className="text-[#C9A961]">TATOUAGE</span>
                     </motion.h2>
@@ -35,12 +35,11 @@ export default function TattooTrainingSection() {
                     {/* Colonne Gauche - Détails */}
                     <motion.div 
                         initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-10%" }}
-                        transition={{ duration: 0.5 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
                         className="space-y-8"
                     >
-                        <h3 className="text-3xl font-['Playfair_Display'] text-white font-bold mb-8">
+                        <h3 className="text-3xl font-playfair text-white font-bold mb-8">
                             Programme <span className="text-[#C9A961]">Intensif</span>
                         </h3>
                         
@@ -67,9 +66,8 @@ export default function TattooTrainingSection() {
                     {/* Colonne Droite - Tarifs */}
                     <motion.div 
                         initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-10%" }}
-                        transition={{ duration: 0.5 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.4 }}
                         className="flex flex-col gap-6 justify-center"
                     >
                         {[
@@ -87,7 +85,7 @@ export default function TattooTrainingSection() {
                                 )}
                                 <div className="text-center mb-8">
                                     <h4 className="text-[#C9A961] font-bold tracking-widest mb-2">{plan.duration}</h4>
-                                    <div className="text-5xl font-black text-white font-['Playfair_Display']">{plan.price}</div>
+                                    <div className="text-5xl font-black text-white font-playfair">{plan.price}</div>
                                     {plan.urgency && (
                                         <div className="mt-4 text-red-400 font-bold text-sm animate-pulse">
                                             {plan.urgency}
@@ -134,7 +132,7 @@ export default function TattooTrainingSection() {
                         viewport={{ once: true }}
                         className="text-center mb-10"
                     >
-                        <h3 className="text-2xl md:text-3xl font-['Playfair_Display'] font-bold text-white mb-3">
+                        <h3 className="text-2xl md:text-3xl font-playfair font-bold text-white mb-3">
                             Immersion au <span className="text-[#C9A961]">Studio</span>
                         </h3>
                         <p className="text-gray-400 text-sm">
@@ -171,7 +169,7 @@ export default function TattooTrainingSection() {
 
                 {/* Section Avis Stage */}
                 <div className="mt-16 max-w-5xl mx-auto">
-                    <h3 className="text-2xl md:text-3xl font-['Playfair_Display'] font-bold text-white mb-10 text-center">
+                    <h3 className="text-2xl md:text-3xl font-playfair font-bold text-white mb-10 text-center">
                         Ce qu'ils en <span className="text-[#C9A961]">Pensent</span>
                     </h3>
                     <div className="grid md:grid-cols-3 gap-6">

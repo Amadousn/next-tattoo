@@ -72,12 +72,12 @@ export default function FlashTattooSection() {
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="font-['Playfair_Display'] text-5xl md:text-7xl font-black text-white mb-6"
+                        className="font-playfair text-5xl md:text-7xl font-black text-white mb-6"
                     >
                         FLASH <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C9A961] via-[#F5F5DC] to-[#C9A961]">TATTOO</span>
                     </motion.h2>
                     
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto font-['Cinzel']">
+                    <p className="text-gray-400 text-lg max-w-2xl mx-auto font-cinzel">
                         Designs prêts à tatouer immédiatement. Minimalistes, élégants et abordables.
                     </p>
                 </div>
@@ -88,9 +88,8 @@ export default function FlashTattooSection() {
                         <motion.div
                             key={idx}
                             initial={{ y: 30, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1 }}
-                            viewport={{ once: true, margin: "-10%" }}
-                            transition={{ delay: idx * 0.15 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: idx * 0.15 + 0.3 }}
                             className="group relative"
                         >
                             {/* Glow Effect */}
@@ -103,10 +102,10 @@ export default function FlashTattooSection() {
                                 </div>
 
                                 {/* Title & Price */}
-                                <h3 className="text-2xl font-bold text-white mb-2 font-['Cinzel']">
+                                <h3 className="text-2xl font-bold text-white mb-2 font-cinzel">
                                     {category.title}
                                 </h3>
-                                <div className="text-3xl font-black text-[#C9A961] mb-4 font-['Playfair_Display']">
+                                <div className="text-3xl font-black text-[#C9A961] mb-4 font-playfair">
                                     {category.price}
                                 </div>
                                 
@@ -131,11 +130,11 @@ export default function FlashTattooSection() {
                 {/* Visual Examples Section */}
                 <motion.div 
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
                     className="bg-[#0a0a0a] border border-[#333] rounded-2xl p-8 md:p-12 mb-16"
                 >
-                    <h3 className="text-3xl font-bold text-white text-center mb-4 font-['Playfair_Display']">
+                    <h3 className="text-3xl font-bold text-white text-center mb-4 font-playfair">
                         Exemples de <span className="text-[#C9A961]">Designs Flash</span>
                     </h3>
                     <p className="text-center text-gray-400 mb-10 text-sm">
@@ -168,7 +167,7 @@ export default function FlashTattooSection() {
                                 <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
                                     {design.icon}
                                 </div>
-                                <h4 className="text-white font-['Cinzel'] text-sm font-bold mb-1">
+                                <h4 className="text-white font-cinzel text-sm font-bold mb-1">
                                     {design.name}
                                 </h4>
                                 <p className="text-gray-500 text-xs">
@@ -194,14 +193,14 @@ export default function FlashTattooSection() {
                         whileInView={{ y: 0, opacity: 1 }}
                         viewport={{ once: true }}
                     >
-                        <p className="text-gray-400 mb-6 font-['Cinzel']">
+                        <p className="text-gray-400 mb-6 font-cinzel">
                             Envie d'un tatouage rapide et stylé ? Découvrez notre sélection complète en studio.
                         </p>
                         <a
                             href="https://www.planity.com/next-tatoo-logistique-75011-paris"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#C9A961] to-[#A88B4A] text-black font-['Cinzel'] font-bold tracking-wider hover:scale-105 transition-transform duration-300 shadow-[0_0_30px_rgba(201,169,97,0.3)]"
+                            className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#C9A961] to-[#A88B4A] text-black font-cinzel font-bold tracking-wider hover:scale-105 transition-transform duration-300 shadow-[0_0_30px_rgba(201,169,97,0.3)]"
                         >
                             <Zap size={20} />
                             RÉSERVER UN FLASH TATTOO

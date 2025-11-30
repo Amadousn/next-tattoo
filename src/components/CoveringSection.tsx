@@ -21,12 +21,12 @@ export default function CoveringSection() {
                 <div className="w-full max-w-7xl px-4 md:px-8">
                 {/* En-tête */}
                 <div className="flex flex-col items-center justify-center text-center mb-16 md:mb-20 w-full">
-                    <span className="text-[#C9A961] font-['Cinzel'] text-xs md:text-sm tracking-[0.4em] uppercase block mb-6">
+                    <span className="text-[#C9A961] font-cinzel text-xs md:text-sm tracking-[0.4em] uppercase block mb-6">
                         Nos Spécialités
                     </span>
                     
                     <h2 className="mb-8 w-full text-center" style={{
-                        fontFamily: "'Playfair Display', serif",
+                        fontFamily: "var(--font-playfair), serif",
                         fontSize: 'clamp(2.5rem, 8vw, 5.5rem)',
                         fontWeight: 900,
                         lineHeight: 1.1,
@@ -54,7 +54,7 @@ export default function CoveringSection() {
                     </div>
 
                     <div className="w-full flex justify-center">
-                        <p className="font-['Cinzel'] text-base md:text-lg max-w-3xl leading-relaxed text-[#E0E0E0] text-center" style={{
+                        <p className="font-cinzel text-base md:text-lg max-w-3xl leading-relaxed text-[#E0E0E0] text-center" style={{
                             letterSpacing: '0.05em'
                         }}>
                             Transformez vos cicatrices en œuvres d'art ou donnez une nouvelle vie à vos anciens tatouages
@@ -66,10 +66,10 @@ export default function CoveringSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16 max-w-6xl mx-auto">
                     {/* Covering de Cicatrice */}
                     <div className="bg-gradient-to-br from-black/40 to-black/20 border-2 border-[#C9A961]/30 p-8 hover:border-[#C9A961] transition-all duration-500">
-                        <h3 className="font-['Playfair_Display'] text-2xl md:text-3xl font-bold mb-4 text-white">
+                        <h3 className="font-playfair text-2xl md:text-3xl font-bold mb-4 text-white">
                             Covering de <span className="text-[#C9A961]">Cicatrice</span>
                         </h3>
-                        <p className="font-['Cinzel'] text-sm md:text-base text-[#E0E0E0] leading-relaxed mb-6">
+                        <p className="font-cinzel text-sm md:text-base text-[#E0E0E0] leading-relaxed mb-6">
                             Transformez vos cicatrices en magnifiques œuvres d'art. Notre expertise en covering vous permet de retrouver confiance avec des tatouages artistiques personnalisés qui masquent parfaitement les imperfections.
                         </p>
                         <ul className="space-y-3">
@@ -96,10 +96,10 @@ export default function CoveringSection() {
 
                     {/* Reprise de Tatouage */}
                     <div className="bg-gradient-to-br from-black/40 to-black/20 border-2 border-[#C9A961]/30 p-8 hover:border-[#C9A961] transition-all duration-500">
-                        <h3 className="font-['Playfair_Display'] text-2xl md:text-3xl font-bold mb-4 text-white">
+                        <h3 className="font-playfair text-2xl md:text-3xl font-bold mb-4 text-white">
                             Reprise de <span className="text-[#C9A961]">Tatouage</span>
                         </h3>
-                        <p className="font-['Cinzel'] text-sm md:text-base text-[#E0E0E0] leading-relaxed mb-6">
+                        <p className="font-cinzel text-sm md:text-base text-[#E0E0E0] leading-relaxed mb-6">
                             Donnez une nouvelle vie à vos anciens tatouages. Cover-up complet, amélioration ou transformation, nous créons des designs qui dépassent vos attentes et effacent le passé.
                         </p>
                         <ul className="space-y-3">
@@ -127,7 +127,7 @@ export default function CoveringSection() {
 
                 {/* Titre Galerie */}
                 <div className="text-center mb-12">
-                    <h3 className="font-['Playfair_Display'] text-3xl md:text-4xl font-bold text-white mb-4">
+                    <h3 className="font-playfair text-3xl md:text-4xl font-bold text-white mb-4">
                         Nos <span className="text-[#C9A961]">Réalisations</span>
                     </h3>
                     <div className="flex items-center justify-center gap-4">
@@ -176,7 +176,7 @@ export default function CoveringSection() {
                         href="https://www.planity.com/next-tatoo-logistique-75011-paris"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#C9A961] to-[#A88B4A] text-black font-['Cinzel'] font-bold text-base md:text-lg tracking-wider transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(201,169,97,0.5)] group"
+                        className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#C9A961] to-[#A88B4A] text-black font-cinzel font-bold text-base md:text-lg tracking-wider transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(201,169,97,0.5)] group"
                     >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
