@@ -29,7 +29,7 @@ export default function PricingSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="font-['Playfair_Display'] text-5xl md:text-7xl font-black text-white mb-6"
+                        className="font-playfair text-5xl md:text-7xl font-black text-white mb-6"
                     >
                         TARIFS & <span className="text-[#C9A961]">PROJETS</span>
                     </motion.h2>
@@ -49,7 +49,7 @@ export default function PricingSection() {
                         </div>
                         <div className="text-left">
                             <div className="text-[#C9A961] text-xs font-bold tracking-widest">FACILITÉS DE PAIEMENT</div>
-                            <div className="text-white font-['Cinzel'] font-bold">PAIEMENT EN PLUSIEURS FOIS ACCEPTÉ</div>
+                            <div className="text-white font-cinzel font-bold">PAIEMENT EN PLUSIEURS FOIS ACCEPTÉ</div>
                         </div>
                     </div>
                 </motion.div>
@@ -66,8 +66,8 @@ export default function PricingSection() {
                             className="group relative h-40 perspective-1000"
                         >
                             <div className="absolute inset-0 bg-[#111] border border-[#333] rounded-xl transform transition-all duration-500 group-hover:scale-105 group-hover:border-[#C9A961] group-hover:shadow-[0_0_30px_rgba(201,169,97,0.2)] flex flex-col items-center justify-center p-4">
-                                <div className="text-[#888] font-['Cinzel'] text-sm mb-2 group-hover:text-[#C9A961] transition-colors">{tier.size}</div>
-                                <div className="text-3xl md:text-4xl font-black text-white font-['Playfair_Display'] group-hover:scale-110 transition-transform">{tier.price}</div>
+                                <div className="text-[#888] font-cinzel text-sm mb-2 group-hover:text-[#C9A961] transition-colors">{tier.size}</div>
+                                <div className="text-3xl md:text-4xl font-black text-white font-playfair group-hover:scale-110 transition-transform">{tier.price}</div>
                                 
                                 {/* Shine Effect */}
                                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-xl overflow-hidden">

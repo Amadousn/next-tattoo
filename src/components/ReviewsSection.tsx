@@ -85,11 +85,11 @@ export default function ReviewsSection() {
                         transition={{ duration: 0.5 }}
                         className="text-left md:w-1/2"
                     >
-                        <h2 className="font-['Playfair_Display'] text-4xl md:text-6xl font-black text-white mb-4 leading-tight">
+                        <h2 className="font-playfair text-4xl md:text-6xl font-black text-white mb-4 leading-tight">
                             L'AVIS DE <br/>
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C9A961] to-[#F5F5DC]">NOS CLIENTS</span>
                         </h2>
-                        <p className="text-gray-400 font-['Cinzel'] text-lg tracking-wide">
+                        <p className="text-gray-400 font-cinzel text-lg tracking-wide">
                             La satisfaction de notre communauté est notre plus belle réussite.
                         </p>
                     </motion.div>
@@ -140,7 +140,7 @@ export default function ReviewsSection() {
                             <Quote className="absolute top-8 right-8 text-[#C9A961]/10 w-12 h-12 group-hover:text-[#C9A961]/30 transition-colors" />
                             
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1a1a1a] to-[#050505] flex items-center justify-center text-[#C9A961] font-bold text-xl font-['Cinzel'] border border-[#333] shadow-lg">
+                                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1a1a1a] to-[#050505] flex items-center justify-center text-[#C9A961] font-bold text-xl font-cinzel border border-[#333] shadow-lg">
                                     {review.name.charAt(0)}
                                 </div>
                                 <div>

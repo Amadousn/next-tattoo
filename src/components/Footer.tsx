@@ -17,7 +17,7 @@ export default function Footer() {
                         />
                     </div>
                     
-                    <h2 className="text-3xl md:text-5xl font-black text-white font-['Playfair_Display'] tracking-tighter mb-4">
+                    <h2 className="text-3xl md:text-5xl font-black text-white font-playfair tracking-tighter mb-4">
                         NEXT <span className="text-[#C9A961]">TATTOO LOGISTIC</span>
                     </h2>
 
@@ -79,7 +79,7 @@ export default function Footer() {
                 <div className="grid md:grid-cols-3 gap-12 border-t border-[#1a1a1a] pt-12 mb-12">
                     {/* Paris */}
                     <div>
-                        <h4 className="text-white font-bold mb-4 font-['Cinzel'] text-lg">PARIS</h4>
+                        <h4 className="text-white font-bold mb-4 font-cinzel text-lg">PARIS</h4>
                         <div className="space-y-2 text-sm text-gray-400">
                             <p>90 Avenue de la République</p>
                             <p>75011 Paris</p>
@@ -90,7 +90,7 @@ export default function Footer() {
                     
                     {/* Les Ulis */}
                     <div>
-                        <h4 className="text-white font-bold mb-4 font-['Cinzel'] text-lg">LES ULIS</h4>
+                        <h4 className="text-white font-bold mb-4 font-cinzel text-lg">LES ULIS</h4>
                         <div className="space-y-2 text-sm text-gray-400">
                             <p>Centre Commercial Les Boutiques</p>
                             <p>Avenue de Bourgogne</p>
@@ -102,7 +102,7 @@ export default function Footer() {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="text-white font-bold mb-4 font-['Cinzel'] text-lg">CONTACT</h4>
+                        <h4 className="text-white font-bold mb-4 font-cinzel text-lg">CONTACT</h4>
                         <div className="space-y-4 text-sm">
                             <a href="https://wa.me/33624358280" className="block text-[#C9A961] hover:text-white transition-colors font-bold">
                                 +33 6 24 35 82 80
@@ -111,7 +111,7 @@ export default function Footer() {
                                 href="https://www.planity.com/next-tatoo-logistique-75011-paris"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block px-6 py-3 border border-[#C9A961] text-[#C9A961] hover:bg-[#C9A961] hover:text-black transition-all duration-300 font-['Cinzel'] font-bold"
+                                className="inline-block px-6 py-3 border border-[#C9A961] text-[#C9A961] hover:bg-[#C9A961] hover:text-black transition-all duration-300 font-cinzel font-bold"
                             >
                                 Réserver sur Planity
                             </a>
@@ -121,7 +121,7 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div className="border-t border-[#1a1a1a] pt-8 text-center">
-                    <p className="text-gray-600 text-xs font-['Cinzel']">
+                    <p className="text-gray-600 text-xs font-cinzel">
                         © {new Date().getFullYear()} Next Tattoo Logistic. Tous droits réservés.
                     </p>
                 </div>

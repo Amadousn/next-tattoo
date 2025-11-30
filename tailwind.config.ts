@@ -23,8 +23,8 @@ const config: Config = {
         cream: '#F5F5DC',
       },
       fontFamily: {
-        cinzel: ['Cinzel', 'serif'],
-        playfair: ['Playfair Display', 'serif'],
+        cinzel: ['var(--font-cinzel)', 'serif'],
+        playfair: ['var(--font-playfair)', 'serif'],
       },
     },
   },

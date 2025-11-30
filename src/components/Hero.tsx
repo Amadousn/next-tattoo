@@ -96,7 +96,7 @@ export default function Hero() {
                 </motion.div>
 
                 {/* Titre Principal */}
-                <motion.h1 variants={itemVariants} className="font-['Playfair_Display'] font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter leading-none mb-6 text-white relative">
+                <motion.h1 variants={itemVariants} className="font-playfair font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter leading-none mb-6 text-white relative">
                     <span className="relative inline-block">
                         <span className="relative z-10 bg-gradient-to-b from-neutral-100 via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
                             L'ART DU
@@ -119,7 +119,7 @@ export default function Hero() {
                 </motion.div>
 
                 {/* Sous-titre */}
-                <motion.p variants={itemVariants} className="font-['Cinzel'] text-lg md:text-2xl text-neutral-300 tracking-[0.2em] mb-12 max-w-3xl mx-auto leading-relaxed">
+                <motion.p variants={itemVariants} className="font-cinzel text-lg md:text-2xl text-neutral-300 tracking-[0.2em] mb-12 max-w-3xl mx-auto leading-relaxed">
                     STUDIO PROFESSIONNEL <span className="text-[#C9A961] font-bold mx-2">PARIS</span> & <span className="text-[#C9A961] font-bold mx-2">LES ULIS</span>
                 </motion.p>
 
@@ -132,7 +132,7 @@ export default function Hero() {
                                 href="https://www.planity.com/next-tatoo-logistique-75011-paris"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-full sm:w-auto group relative px-8 py-4 bg-[#C9A961] text-black font-['Cinzel'] font-bold tracking-wider overflow-hidden transition-transform hover:scale-105 text-center"
+                                className="w-full sm:w-auto group relative px-8 py-4 bg-[#C9A961] text-black font-cinzel font-bold tracking-wider overflow-hidden transition-transform hover:scale-105 text-center"
                             >
                                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
                                 <span className="relative flex items-center justify-center gap-2">
@@ -145,7 +145,7 @@ export default function Hero() {
                             
                             <Link
                                 href="/contact"
-                                className="w-full sm:w-auto px-8 py-4 border border-[#5A0000] text-[#F5F5DC] font-['Cinzel'] font-bold tracking-wider hover:bg-[#5A0000]/20 transition-colors duration-300 flex items-center justify-center"
+                                className="w-full sm:w-auto px-8 py-4 border border-[#5A0000] text-[#F5F5DC] font-cinzel font-bold tracking-wider hover:bg-[#5A0000]/20 transition-colors duration-300 flex items-center justify-center"
                             >
                                 NOUS CONTACTER
                             </Link>

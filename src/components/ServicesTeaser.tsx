@@ -50,7 +50,7 @@ export default function ServicesTeaser() {
             
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-black text-white mb-4">
+                    <h2 className="font-playfair text-4xl md:text-5xl font-black text-white mb-4">
                         NOS <span className="text-[#C9A961]">SERVICES</span>
                     </h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#C9A961] to-transparent mx-auto"></div>
@@ -72,7 +72,7 @@ export default function ServicesTeaser() {
                                     {service.icon}
                                 </div>
 
-                                <h3 className="font-['Cinzel'] text-xl font-bold text-white mb-3 group-hover:text-[#C9A961] transition-colors">
+                                <h3 className="font-cinzel text-xl font-bold text-white mb-3 group-hover:text-[#C9A961] transition-colors">
                                     {service.title}
                                 </h3>
                                 

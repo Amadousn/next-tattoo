@@ -41,10 +41,10 @@ export default function Header() {
                                 />
                             </div>
                             <div className="hidden sm:block">
-                                <div className="font-['Playfair_Display'] text-2xl md:text-3xl font-bold text-white">
+                                <div className="font-playfair text-2xl md:text-3xl font-bold text-white">
                                     Next <span className="text-[#C9A961]">Tattoo</span>
                                 </div>
-                                <div className="font-['Cinzel'] text-xs text-[#C9A961] tracking-[0.2em]">
+                                <div className="font-cinzel text-xs text-[#C9A961] tracking-[0.2em]">
                                     LOGISTIC
                                 </div>
                             </div>
@@ -54,14 +54,14 @@ export default function Header() {
                         <nav className="hidden lg:flex items-center gap-8">
                             <Link
                                 href="/tatouage"
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
+                                className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
                             >
                                 TATOUAGE
                             </Link>
                             
                             {/* Dropdown Prestations */}
                             <div className="relative group">
-                                <button className="flex items-center gap-1 font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider py-4">
+                                <button className="flex items-center gap-1 font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider py-4">
                                     PRESTATIONS
                                     <ChevronDown size={14} />
                                 </button>
@@ -69,19 +69,19 @@ export default function Header() {
                                     <div className="py-2 flex flex-col">
                                         <Link
                                             href="/flash-tattoo"
-                                            className="font-['Cinzel'] text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
+                                            className="font-cinzel text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
                                         >
                                             FLASH TATTOO
                                         </Link>
                                         <Link
                                             href="/covering"
-                                            className="font-['Cinzel'] text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
+                                            className="font-cinzel text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
                                         >
                                             COVERING
                                         </Link>
                                         <Link
                                             href="/piercings"
-                                            className="font-['Cinzel'] text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
+                                            className="font-cinzel text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
                                         >
                                             PIERCINGS
                                         </Link>
@@ -91,13 +91,13 @@ export default function Header() {
 
                             <Link
                                 href="/formation"
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
+                                className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
                             >
                                 FORMATION
                             </Link>
                             <Link
                                 href="/contact"
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
+                                className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
                             >
                                 CONTACT
                             </Link>
@@ -108,7 +108,7 @@ export default function Header() {
                             href="https://www.planity.com/next-tatoo-logistique-75011-paris"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden lg:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#C9A961] to-[#A88B4A] text-black font-['Cinzel'] font-bold text-sm tracking-wider hover:scale-105 hover:shadow-[0_0_20px_rgba(201,169,97,0.5)] transition-all duration-300"
+                            className="hidden lg:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#C9A961] to-[#A88B4A] text-black font-cinzel font-bold text-sm tracking-wider hover:scale-105 hover:shadow-[0_0_20px_rgba(201,169,97,0.5)] transition-all duration-300"
                         >
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -142,42 +142,42 @@ export default function Header() {
                             <Link
                                 href="/tatouage"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
+                                className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 TATOUAGE
                             </Link>
                             <Link
                                 href="/flash-tattoo"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
+                                className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 FLASH TATTOO
                             </Link>
                             <Link
                                 href="/formation"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
+                                className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 FORMATION
                             </Link>
                             <Link
                                 href="/covering"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
+                                className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 COVERING
                             </Link>
                             <Link
                                 href="/piercings"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
+                                className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 PIERCINGS
                             </Link>
                             <Link
                                 href="/contact"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
+                                className="font-cinzel text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 CONTACT
                             </Link>
@@ -185,7 +185,7 @@ export default function Header() {
                                 href="https://www.planity.com/next-tatoo-logistique-75011-paris"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center justify-center gap-2 px-6 py-4 mt-4 bg-gradient-to-r from-[#C9A961] to-[#A88B4A] text-black font-['Cinzel'] font-bold text-sm tracking-wider hover:scale-105 transition-all duration-300"
+                                className="flex items-center justify-center gap-2 px-6 py-4 mt-4 bg-gradient-to-r from-[#C9A961] to-[#A88B4A] text-black font-cinzel font-bold text-sm tracking-wider hover:scale-105 transition-all duration-300"
                             >
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
