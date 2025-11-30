@@ -70,6 +70,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://nexttattoo.fr",
   },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({
