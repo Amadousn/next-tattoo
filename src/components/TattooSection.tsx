@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { PenTool, Shield, Heart, Clock, Star, Award, Users } from 'lucide-react';
 
 export default function TattooSection() {
@@ -28,7 +29,7 @@ export default function TattooSection() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-gray-300 text-lg md:text-xl leading-relaxed font-cinzel mb-12"
                     >
-                        Bienvenue chez Next Tattoo, où chaque trait raconte une histoire. 
+                        Bienvenue chez Next Tattoo Logistic, où chaque trait raconte une histoire. 
                         Notre studio n'est pas seulement un lieu de passage, c'est un atelier d'art 
                         où vos idées prennent vie avec précision, passion et excellence.
                     </motion.p>
