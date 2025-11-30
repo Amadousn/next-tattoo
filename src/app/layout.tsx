@@ -34,14 +34,14 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://nexttattoo.fr'),
   title: {
-    default: "Next Tattoo | Studio de Tatouage Paris & Les Ulis",
-    template: "%s | Next Tattoo"
+    default: "Next Tattoo Logistic | Studio de Tatouage Paris & Les Ulis",
+    template: "%s | Next Tattoo Logistic"
   },
-  description: "Studio de tatouage d'élite à Paris et Les Ulis. Spécialistes en réalisme, calligraphie, tribal et cover-up. Formation tatoueur disponible. Hygiène irréprochable.",
-  keywords: ["tatouage paris", "tatoueur les ulis", "studio tatouage", "formation tatoueur", "tattoo réalisme", "cover up tattoo", "tatouage tribal", "tatouage calligraphie"],
-  authors: [{ name: "Next Tattoo" }],
-  creator: "Next Tattoo",
-  publisher: "Next Tattoo",
+  description: "Next Tattoo Logistic : Studio de tatouage d'élite à Paris et Les Ulis. Spécialistes en réalisme, calligraphie, tribal et cover-up. Formation tatoueur disponible.",
+  keywords: ["tatouage paris", "tatoueur les ulis", "next tattoo logistic", "studio tatouage", "formation tatoueur", "tattoo réalisme", "cover up tattoo"],
+  authors: [{ name: "Next Tattoo Logistic" }],
+  creator: "Next Tattoo Logistic",
+  publisher: "Next Tattoo Logistic",
   robots: {
     index: true,
     follow: true,
@@ -99,7 +99,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TattooParlor",
-    "name": "Next Tattoo",
+    "name": "Next Tattoo Logistic",
     "image": "https://nexttattoo.fr/og-image.jpg",
     "description": "Studio de tatouage professionnel offrant des créations uniques et personnalisées.",
     "address": {
