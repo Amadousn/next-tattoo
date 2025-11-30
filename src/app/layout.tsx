@@ -118,7 +118,13 @@ export default function RootLayout({
       }
     ],
     "telephone": "+33624358280",
-    "url": "https://nexttattoo.fr"
+    "url": "https://nexttattoo.fr",
+    "sameAs": [
+      "https://www.facebook.com/NextTattooLogistique",
+      "https://www.instagram.com/next.tattoo__logistic",
+      "https://www.tiktok.com/@next_tattoo_logistic",
+      "https://www.planity.com/next-tatoo-logistique-75011-paris"
+    ]
   };
 
   return (
