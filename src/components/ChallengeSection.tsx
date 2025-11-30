@@ -127,12 +127,14 @@ export default function ChallengeSection() {
                                     </div>
 
                                     <div className="mt-8 text-center">
-                                        <button 
-                                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                                            className="w-full py-4 bg-red-700 hover:bg-red-600 text-white font-bold font-['Cinzel'] tracking-widest uppercase transition-all duration-300 shadow-[0_0_20px_rgba(185,28,28,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.6)] border border-red-500"
+                                        <a 
+                                            href="https://wa.me/33624358280?text=Je%20suis%20prêt%20à%20relever%20le%20DÉFI%20TITAN%20!%20💪"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="block w-full py-4 bg-red-700 hover:bg-red-600 text-white font-bold font-['Cinzel'] tracking-widest uppercase transition-all duration-300 shadow-[0_0_20px_rgba(185,28,28,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.6)] border border-red-500 text-center"
                                         >
                                             J'accepte le Défi
-                                        </button>
+                                        </a>
                                         <p className="text-xs text-gray-500 mt-3 italic">
                                             *Signature d'une décharge obligatoire avant la séance.
                                         </p>
