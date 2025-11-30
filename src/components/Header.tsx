@@ -18,21 +18,6 @@ export default function Header() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const scrollToSection = (sectionId: string) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            const offset = 80;
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
-        setIsMobileMenuOpen(false);
-    };
-
     return (
         <header 
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -67,12 +52,12 @@ export default function Header() {
 
                         {/* Navigation Desktop */}
                         <nav className="hidden lg:flex items-center gap-8">
-                            <button
-                                onClick={() => scrollToSection('creations')}
+                            <Link
+                                href="/tatouage"
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
                             >
-                                GALERIE
-                            </button>
+                                TATOUAGE
+                            </Link>
                             
                             {/* Dropdown Prestations */}
                             <div className="relative group">
@@ -82,46 +67,40 @@ export default function Header() {
                                 </button>
                                 <div className="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-black/95 backdrop-blur-md border border-[#333] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                                     <div className="py-2 flex flex-col">
-                                        <button
-                                            onClick={() => scrollToSection('flash-tattoo')}
+                                        <Link
+                                            href="/flash-tattoo"
                                             className="font-['Cinzel'] text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
                                         >
                                             FLASH TATTOO
-                                        </button>
-                                        <button
-                                            onClick={() => scrollToSection('covering')}
+                                        </Link>
+                                        <Link
+                                            href="/covering"
                                             className="font-['Cinzel'] text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
                                         >
                                             COVERING
-                                        </button>
-                                        <button
-                                            onClick={() => scrollToSection('piercings')}
+                                        </Link>
+                                        <Link
+                                            href="/piercings"
                                             className="font-['Cinzel'] text-xs text-gray-300 hover:text-[#C9A961] hover:bg-white/5 py-3 px-4 text-left transition-colors"
                                         >
                                             PIERCINGS
-                                        </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
 
-                            <button
-                                onClick={() => scrollToSection('tarifs')}
+                            <Link
+                                href="/formation"
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
                             >
-                                TARIFS
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('stage')}
-                                className="font-['Cinzel'] text-sm text-[#C9A961] hover:text-white transition-colors duration-300 tracking-wider border border-[#C9A961]/30 px-3 py-1 rounded-sm hover:bg-[#C9A961]/10"
-                            >
                                 FORMATION
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('contact')}
+                            </Link>
+                            <Link
+                                href="/contact"
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider"
                             >
                                 CONTACT
-                            </button>
+                            </Link>
                         </nav>
 
                         {/* CTA Button Desktop */}
@@ -153,55 +132,55 @@ export default function Header() {
 
             {/* Menu Mobile */}
             <div 
-                className={`lg:hidden absolute top-full left-0 right-0 bg-black/98 backdrop-blur-md border-t border-[#C9A961]/20 transition-all duration-500 overflow-hidden ${
+                className={`lg:hidden absolute top-full left-0 right-0 bg-[#050505] border-t border-[#C9A961]/20 transition-all duration-500 overflow-hidden z-[60] ${
                     isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
                 }`}
             >
                 <div className="w-full flex justify-center">
                     <div className="w-full max-w-7xl px-4 md:px-8 py-6">
                         <nav className="flex flex-col gap-4">
-                            <button
-                                onClick={() => scrollToSection('creations')}
+                            <Link
+                                href="/tatouage"
+                                onClick={() => setIsMobileMenuOpen(false)}
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
-                                CRÉATIONS
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('flash-tattoo')}
+                                TATOUAGE
+                            </Link>
+                            <Link
+                                href="/flash-tattoo"
+                                onClick={() => setIsMobileMenuOpen(false)}
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 FLASH TATTOO
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('tarifs')}
+                            </Link>
+                            <Link
+                                href="/formation"
+                                onClick={() => setIsMobileMenuOpen(false)}
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
-                                TARIFS
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('stage')}
-                                className="font-['Cinzel'] text-sm text-[#C9A961] font-bold hover:text-white transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
-                            >
                                 FORMATION
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('covering')}
+                            </Link>
+                            <Link
+                                href="/covering"
+                                onClick={() => setIsMobileMenuOpen(false)}
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 COVERING
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('piercings')}
+                            </Link>
+                            <Link
+                                href="/piercings"
+                                onClick={() => setIsMobileMenuOpen(false)}
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 PIERCINGS
-                            </button>
-                            <button
-                                onClick={() => scrollToSection('contact')}
+                            </Link>
+                            <Link
+                                href="/contact"
+                                onClick={() => setIsMobileMenuOpen(false)}
                                 className="font-['Cinzel'] text-sm text-white hover:text-[#C9A961] transition-colors duration-300 tracking-wider text-left py-3 border-b border-[#C9A961]/10"
                             >
                                 CONTACT
-                            </button>
+                            </Link>
                             <a
                                 href="https://www.planity.com/next-tatoo-logistique-75011-paris"
                                 target="_blank"

@@ -68,21 +68,18 @@ const creations = [
 ];
 
 export default function LatestCreations() {
-    const ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["start end", "end start"]
-    });
-
-    const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0, 0.2], [0.95, 1]);
-
     // On triple la liste pour l'effet infini encore plus fluide
     const allCreations = [...creations, ...creations, ...creations];
 
     return (
-        <section ref={ref} className="relative py-32 bg-[#0a0a0a] overflow-hidden w-full">
-            <motion.div style={{ opacity, scale }} className="w-full relative z-20">
+        <section className="relative py-32 bg-[#0a0a0a] overflow-hidden w-full">
+            <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, margin: "-10%" }}
+                transition={{ duration: 0.8 }}
+                className="w-full relative z-20"
+            >
                 {/* En-tête de section amélioré */}
                 <div className="text-center mb-20 px-4">
                     <motion.span 

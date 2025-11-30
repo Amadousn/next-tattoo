@@ -45,21 +45,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://nexttattoo.fr",
-    title: "Next Tattoo | L'Art du Tatouage à Paris",
-    description: "Découvrez l'excellence du tatouage chez Next Tattoo. Nos artistes réalisent vos projets uniques : réalisme, tribal, calligraphie. Réservez votre séance.",
-    siteName: "Next Tattoo",
+    title: "Next Tattoo Logistic | L'Art du Tatouage à Paris",
+    description: "Découvrez l'excellence du tatouage chez Next Tattoo Logistic. Nos artistes réalisent vos projets uniques : réalisme, tribal, calligraphie. Réservez votre séance.",
+    siteName: "Next Tattoo Logistic",
     images: [
       {
         url: "/logo-new.png",
         width: 1200,
         height: 630,
-        alt: "Next Tattoo Studio Logo",
+        alt: "Next Tattoo Logistic Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next Tattoo | Studio de Tatouage Paris",
+    title: "Next Tattoo Logistic | Studio de Tatouage Paris",
     description: "Studio de tatouage d'élite. Réalisme, couleurs, cover-up. Formation disponible.",
     images: ["/logo-new.png"],
   },
@@ -75,6 +75,9 @@ export const metadata: Metadata = {
     google: "J99wtVzukiqmbuk8V_teMS5Qp34oUihcNfMCaczAxMI",
   },
 };
+
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function RootLayout({
   children,
@@ -113,7 +116,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        {children}
+        <Header />
+        <main className="min-h-screen bg-[#0a0a0a] pt-24">
+          {children}
+        </main>
+        <Footer />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

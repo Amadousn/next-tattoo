@@ -27,8 +27,8 @@ export default function PricingSection() {
                 <div className="text-center mb-20">
                     <motion.h2 
                         initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
                         className="font-['Playfair_Display'] text-5xl md:text-7xl font-black text-white mb-6"
                     >
                         TARIFS & <span className="text-[#C9A961]">PROJETS</span>
@@ -39,8 +39,8 @@ export default function PricingSection() {
                 {/* Badge Paiement */}
                 <motion.div 
                     initial={{ scale: 0.9, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
-                    viewport={{ once: true }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
                     className="flex justify-center mb-16"
                 >
                     <div className="bg-gradient-to-r from-[#1a1a1a] to-[#2a2a2a] border border-[#C9A961]/30 rounded-2xl p-1 pr-6 flex items-center gap-4 shadow-2xl shadow-[#C9A961]/10">
@@ -61,7 +61,7 @@ export default function PricingSection() {
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, margin: "-10%" }}
                             transition={{ delay: index * 0.05 }}
                             className="group relative h-40 perspective-1000"
                         >

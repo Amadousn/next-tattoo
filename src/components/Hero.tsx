@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Image from 'next/image';
 import { motion, useScroll, useTransform, Variants } from 'framer-motion';
 import { useRef } from 'react';
@@ -142,18 +143,18 @@ export default function Hero() {
                                 </span>
                             </a>
                             
-                            <button
-                                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                                className="w-full sm:w-auto px-8 py-4 border border-[#5A0000] text-[#F5F5DC] font-['Cinzel'] font-bold tracking-wider hover:bg-[#5A0000]/20 transition-colors duration-300"
+                            <Link
+                                href="/contact"
+                                className="w-full sm:w-auto px-8 py-4 border border-[#5A0000] text-[#F5F5DC] font-['Cinzel'] font-bold tracking-wider hover:bg-[#5A0000]/20 transition-colors duration-300 flex items-center justify-center"
                             >
                                 NOUS CONTACTER
-                            </button>
+                            </Link>
                         </div>
 
                         {/* Badge Avis Client */}
-                        <button 
-                            onClick={() => document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' })}
+                        <div 
                             className="group flex flex-col items-center gap-2 hover:scale-105 transition-transform cursor-pointer"
+                            onClick={() => document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' })}
                         >
                             <div className="flex items-center gap-1">
                                 {[1,2,3,4,5].map(i => (
@@ -169,7 +170,7 @@ export default function Hero() {
                                     +300 avis clients
                                 </span>
                             </div>
-                        </button>
+                        </div>
                     </div>
                 </motion.div>
 

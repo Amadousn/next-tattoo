@@ -60,8 +60,8 @@ export default function FlashTattooSection() {
                 <div className="text-center mb-20">
                     <motion.div
                         initial={{ scale: 0.9, opacity: 0 }}
-                        whileInView={{ scale: 1, opacity: 1 }}
-                        viewport={{ once: true }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.5 }}
                         className="inline-flex items-center gap-2 px-4 py-2 border border-[#C9A961]/30 rounded-full text-[#C9A961] mb-8"
                     >
                         <Zap size={16} />
@@ -70,8 +70,8 @@ export default function FlashTattooSection() {
                     
                     <motion.h2 
                         initial={{ y: 20, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        viewport={{ once: true }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
                         className="font-['Playfair_Display'] text-5xl md:text-7xl font-black text-white mb-6"
                     >
                         FLASH <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C9A961] via-[#F5F5DC] to-[#C9A961]">TATTOO</span>
@@ -89,7 +89,7 @@ export default function FlashTattooSection() {
                             key={idx}
                             initial={{ y: 30, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, margin: "-10%" }}
                             transition={{ delay: idx * 0.15 }}
                             className="group relative"
                         >

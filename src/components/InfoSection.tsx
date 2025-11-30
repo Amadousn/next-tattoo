@@ -127,8 +127,8 @@ export default function InfoSection() {
                                 <Phone size={24} />
                             </div>
                             <div className="text-left">
-                                <p className="text-gray-400 text-sm mb-1">Nous appeler</p>
-                                <a href="tel:+33624358280" className="text-xl font-bold text-white hover:text-[#C9A961] transition-colors">
+                                <p className="text-gray-400 text-sm mb-1">Nous contacter sur WhatsApp</p>
+                                <a href="https://wa.me/33624358280" className="text-xl font-bold text-white hover:text-[#C9A961] transition-colors">
                                     06 24 35 82 80
                                 </a>
                             </div>

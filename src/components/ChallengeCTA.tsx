@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function ChallengeCTA() {
@@ -13,18 +14,14 @@ export default function ChallengeCTA() {
         return () => clearTimeout(timer);
     }, []);
 
-    const scrollToChallenge = () => {
-        document.getElementById('challenge-section')?.scrollIntoView({ behavior: 'smooth' });
-    };
-
     return (
         <div 
             className={`fixed right-0 top-1/2 -translate-y-1/2 z-50 transition-transform duration-700 ease-out ${
                 isVisible ? 'translate-x-0' : 'translate-x-full'
             }`}
         >
-            <button
-                onClick={scrollToChallenge}
+            <Link
+                href="/challenge"
                 className="relative group flex items-center"
             >
                 {/* Onglet Principal */}
@@ -61,7 +58,7 @@ export default function ChallengeCTA() {
                         </p>
                     </div>
                 </div>
-            </button>
+            </Link>
         </div>
     );
 }

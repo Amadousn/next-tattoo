@@ -81,8 +81,8 @@ export default function ReviewsSection() {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/10 pb-12">
                     <motion.div 
                         initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5 }}
                         className="text-left md:w-1/2"
                     >
                         <h2 className="font-['Playfair_Display'] text-4xl md:text-6xl font-black text-white mb-4 leading-tight">
@@ -96,8 +96,8 @@ export default function ReviewsSection() {
 
                     <motion.div 
                         initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
                         className="flex items-center gap-6 bg-[#111] border border-[#333] px-8 py-6 rounded-2xl shadow-2xl shadow-[#C9A961]/5"
                     >
                         <div className="text-right">

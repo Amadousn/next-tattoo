@@ -18,7 +18,7 @@ export default function Footer() {
                     </div>
                     
                     <h2 className="text-3xl md:text-5xl font-black text-white font-['Playfair_Display'] tracking-tighter mb-4">
-                        NEXT <span className="text-[#C9A961]">TATTOO</span>
+                        NEXT <span className="text-[#C9A961]">TATTOO LOGISTIC</span>
                     </h2>
 
                     <p className="text-gray-400 text-center max-w-2xl mb-8 text-sm leading-relaxed">
@@ -104,7 +104,7 @@ export default function Footer() {
                     <div>
                         <h4 className="text-white font-bold mb-4 font-['Cinzel'] text-lg">CONTACT</h4>
                         <div className="space-y-4 text-sm">
-                            <a href="tel:+33624358280" className="block text-[#C9A961] hover:text-white transition-colors font-bold">
+                            <a href="https://wa.me/33624358280" className="block text-[#C9A961] hover:text-white transition-colors font-bold">
                                 +33 6 24 35 82 80
                             </a>
                             <a 
