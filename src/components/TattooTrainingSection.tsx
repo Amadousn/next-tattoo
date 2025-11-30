@@ -155,6 +155,7 @@ export default function TattooTrainingSection() {
                                         src={`/trust/video${num}.mp4`}
                                         className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                                         controls
+                                        muted
                                         preload="metadata"
                                         playsInline
                                     >
